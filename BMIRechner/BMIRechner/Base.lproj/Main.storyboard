@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fwl-hV-UqV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BMI Rechner-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BMIRechner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cmz-sC-u8M">
+                                <rect key="frame" x="97" y="135.5" width="181" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="181" id="6xR-M2-fVh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GEWICHT IN KG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pX0-ye-OsO">
+                                <rect key="frame" x="137" y="173.5" width="97.5" height="18"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BQG-Gw-Egh">
+                                <rect key="frame" x="97" y="285.5" width="181" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="181" id="gSV-87-O1A"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GRÖSSE IN CM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3C-fB-gfv">
+                                <rect key="frame" x="142" y="323.5" width="92.5" height="18"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2T-VR-RGt">
+                                <rect key="frame" x="128" y="419" width="118" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="Co5-At-Fic"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WrV-H2-MBO">
+                                <rect key="frame" x="129" y="467" width="119" height="48"/>
+                                <color key="backgroundColor" red="0.30196078431372547" green="0.79607843137254897" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="VIG-JE-Xrw"/>
+                                    <constraint firstAttribute="width" constant="119" id="d9p-Wh-NKi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Berechnen">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rT5-iV-55b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pX0-ye-OsO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-2" id="4Yh-r9-D86"/>
+                            <constraint firstItem="U3C-fB-gfv" firstAttribute="top" secondItem="BQG-Gw-Egh" secondAttribute="bottom" constant="8" id="EcS-cj-ZEr"/>
+                            <constraint firstItem="pX0-ye-OsO" firstAttribute="top" secondItem="Cmz-sC-u8M" secondAttribute="bottom" constant="8" id="FRp-ci-tEo"/>
+                            <constraint firstItem="WrV-H2-MBO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="Hin-bI-uIw"/>
+                            <constraint firstItem="x2T-VR-RGt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pz5-je-Nhk"/>
+                            <constraint firstItem="BQG-Gw-Egh" firstAttribute="top" secondItem="pX0-ye-OsO" secondAttribute="bottom" constant="94" id="R7k-0T-25X"/>
+                            <constraint firstItem="U3C-fB-gfv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-1" id="V5b-O5-cUY"/>
+                            <constraint firstItem="x2T-VR-RGt" firstAttribute="top" secondItem="U3C-fB-gfv" secondAttribute="bottom" constant="77.5" id="guv-sB-ORo"/>
+                            <constraint firstItem="WrV-H2-MBO" firstAttribute="top" secondItem="x2T-VR-RGt" secondAttribute="bottom" constant="27" id="kPh-Se-ytm"/>
+                            <constraint firstItem="BQG-Gw-Egh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l4p-Tb-iui"/>
+                            <constraint firstItem="Cmz-sC-u8M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nXC-c8-IoZ"/>
+                            <constraint firstItem="U3C-fB-gfv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sMA-dH-0ng"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="BMI Rechner" id="wM2-jC-HsM"/>
+                    <connections>
+                        <outlet property="cmField" destination="BQG-Gw-Egh" id="4Xy-KK-ADU"/>
+                        <outlet property="kgField" destination="Cmz-sC-u8M" id="e9I-PH-Gbj"/>
+                        <outlet property="resultLabel" destination="x2T-VR-RGt" id="nlw-Fv-MY7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f3P-eh-YFf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fwl-hV-UqV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uB6-ff-8Y1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vkU-sR-Ddp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m4S-Hg-GsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="139"/>
+        </scene>
+    </scenes>
+</document>
